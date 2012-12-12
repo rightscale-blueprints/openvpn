@@ -1,0 +1,86 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apache2 (1.3.2)
+
+GIT
+  remote: https://github.com/coderanger/chef-collectd_plugins
+  ref: master
+  sha: d8e264da9ad982dc75978e48c14a9323db553378
+  specs:
+    collectd_plugins (1.0.0)
+      collectd (>= 0.0.0)
+
+GIT
+  remote: https://github.com/flaccid/chef-collectd
+  ref: master
+  sha: 5d951bbe4e046c0cc4b175e9785ffa784794e130
+  specs:
+    collectd (1.0.0)
+      apache2 (>= 0.0.0)
+
+GIT
+  remote: https://github.com/flaccid/cookbooks
+  path: cookbooks/resolver
+  ref: master
+  sha: b00fd64b09cc98b814265c84770ff35e9e715ea2
+  specs:
+    resolver (0.8.2)
+
+GIT
+  remote: https://github.com/flaccid/cookbooks
+  path: cookbooks/rightscale
+  ref: master
+  sha: b00fd64b09cc98b814265c84770ff35e9e715ea2
+  specs:
+    rightscale (0.0.1)
+      collectd (>= 0.0.0)
+
+GIT
+  remote: https://github.com/flaccid/cookbooks
+  path: cookbooks/system
+  ref: master
+  sha: b00fd64b09cc98b814265c84770ff35e9e715ea2
+  specs:
+    system (0.0.1)
+      cron (>= 0.0.0)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/cron
+  ref: master
+  sha: dce04363b6a02d36f8da88f202cedfae2daa6a2c
+  specs:
+    cron (1.2.2)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/ntp
+  ref: master
+  sha: 288935754b2c25017e3e0890ffb1a35b2a9f4668
+  specs:
+    ntp (1.3.0)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/openvpn
+  ref: master
+  sha: 1d9838ca3cec981e1ab78d1160821d77f26978b3
+  specs:
+    openvpn (1.0.1)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/sudo
+  ref: master
+  sha: 8be9e7fe425f2d4b1cbf43ade6f04ea2be6d2cf5
+  specs:
+    sudo (1.2.3)
+
+DEPENDENCIES
+  collectd (>= 0)
+  collectd_plugins (>= 0)
+  cron (>= 0)
+  ntp (>= 0)
+  openvpn (>= 0)
+  resolver (>= 0)
+  rightscale (>= 0)
+  sudo (>= 0)
+  system (>= 0)
+
