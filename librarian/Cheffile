@@ -3,13 +3,45 @@
 
 site 'http://community.opscode.com/api/v1'
 
-# cookbook 'chef-client'
+cookbook 'openvpn',
+  :git => 'https://github.com/opscode-cookbooks/openvpn',
+  :ref => 'master'
 
-# cookbook 'apache2', '>= 1.0.0'
+cookbook 'system',
+   :git => 'https://github.com/flaccid/cookbooks',
+   :path => 'cookbooks/system',
+   :ref => 'master'
 
-# cookbook 'rvm',
-#   :git => 'https://github.com/fnichol/chef-rvm'
+cookbook 'rightscale',
+   :git => 'https://github.com/flaccid/cookbooks',
+   :path => 'cookbooks/rightscale',
+   :ref => 'master'
 
-# cookbook 'postgresql',
-#   :git => 'https://github.com/findsyou/cookbooks',
-#   :ref => 'postgresql-improvements'
+cookbook 'resolver',
+   :git => 'https://github.com/flaccid/cookbooks',
+   :path => 'cookbooks/resolver',
+   :ref => 'master'
+
+cookbook 'cron',
+  :git => 'https://github.com/opscode-cookbooks/cron',
+  :ref => 'master'
+
+cookbook 'ntp',
+  :git => 'https://github.com/opscode-cookbooks/ntp',
+  :ref => 'master'
+   
+cookbook 'sudo',
+  :git => 'https://github.com/opscode-cookbooks/sudo',
+  :ref => 'master'
+
+# currently using un-pushed flaccid fork
+cookbook 'collectd',
+  :git => 'https://github.com/flaccid/chef-collectd',
+  :ref => 'master'
+#cookbook 'collectd',
+#  :git => 'https://github.com/coderanger/chef-collectd',
+#  :ref => 'master'
+
+cookbook 'collectd_plugins',
+  :git => 'https://github.com/coderanger/chef-collectd_plugins',
+  :ref => 'master'
