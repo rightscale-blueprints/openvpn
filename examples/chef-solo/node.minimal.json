@@ -1,0 +1,16 @@
+{
+  "openvpn" : {
+    "script_security":"2",
+    "key" : {
+      "country":"Australia",
+      "province":"New South Wales",
+      "city":"Sydney",
+      "org":"Acme",
+      "email":"foo@bar.suf",
+      "ca_expire":"365",
+      "expire":"14",
+      "size":"1024"
+    }
+  },
+  "run_list": [ "recipe[openvpn]" ]
+}
