@@ -3,8 +3,9 @@
 
 site 'http://community.opscode.com/api/v1'
 
+# use flaccid's fork until http://tickets.opscode.com/browse/COOK-2820 is complete by PR
 cookbook 'openvpn',
-  :git => 'https://github.com/opscode-cookbooks/openvpn',
+  :git => 'https://github.com/flaccid/openvpn',
   :ref => 'master'
 
 cookbook 'system',
